@@ -1,0 +1,11 @@
+beautifulsoup4
+Django
+fuzzywuzzy
+pandas
+pdfplumber
+pypdf
+requests
+deep-translator
+tqdm
+torch
+transformers

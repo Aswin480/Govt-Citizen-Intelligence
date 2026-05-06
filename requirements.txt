@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-community
+langchain-ollama
+paddlepaddle
+paddleocr
+pydantic
+opencv-python-headless
+pymupdf
+httpx
+reportlab
+pdfplumber
+google-generativeai

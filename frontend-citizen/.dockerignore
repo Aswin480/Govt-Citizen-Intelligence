@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.env.local
+.git
+.pnpm-store
+build_errors.log
+build_log.txt
+error.log
+tsc_output.txt
+verify_error.log

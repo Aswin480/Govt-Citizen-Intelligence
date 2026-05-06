@@ -1,0 +1,128 @@
+# Dependencies
+node_modules/
+.venv/
+.env
+
+# Build & Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.vite/
+
+# Database files (local/development)
+*.db
+*.db-shm
+*.db-wal
+*.db.bak
+sql_app.db
+demo_fallback.db
+citizen_policy*.db
+
+# Logs & Error files
+*.log
+error.log
+backend_error.log
+backend_crash*.log
+backend_start*.log
+backend_startup*.log
+startup*.log
+debug_*.log
+signup_*.log
+citizen_test.log
+debug_auth*.log
+
+# Debug & Verification scripts (development only)
+debug_*.py
+verify_*.py
+test_*.py
+check_*.py
+fix_*.py
+convert_*.py
+migrate_*.py
+inspect_*.py
+seed_*.py
+list_tables.py
+startup_verification.py
+import_test.txt
+output.txt
+debug_output*.txt
+citizen_result.txt
+models.txt
+routes.txt
+
+# Generated files
+poster_test_output.png
+generated_posters/
+uploads/
+
+# Machine Learning Models (too large for repo)
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.h5
+backend_nlp/models/
+backend_nlp/outputs/
+
+# Documentation (auto-generated analysis - keep only README.md)
+ALL_FILES_DETAILED_SUMMARY.*
+ANALYSIS_SUMMARY.md
+ARCHITECTURE_DIAGRAM.md
+ARCHITECTURE_TRANSFORMATION.md
+ARCHITECTURE.md
+API_CONTRACTS.md
+BAT_FILES_GUIDE.md
+BATCH_FILES_ANALYSIS.md
+BUDGET_INTELLIGENCE_DATASET.md
+COMPLETE_PROFILE_SECTIONS.md
+DEBATE_CABINET_UPDATE.md
+DEPENDENCIES.md
+DESIGN_VISION_MEMBER_PROFILE.md
+GOVDOC_PLATFORM_SUMMARY.md
+HOW_TO_SEE_THE_FEATURE.md
+IMPLEMENTATION_*.md
+INTEGRATION_GUIDE.md
+JWT_AUTH_FIX.md
+MEMBER_PROFILE*.md
+NLP_DEBATES_ARCHITECTURE.md
+NEXT_STEPS.md
+POLITICAL_UPDATE_SUMMARY.md
+PROFILE_STRUCTURE_INTEGRATION_ANALYSIS.md
+PROJECT_ANALYSIS*.md
+QUICK_*.md
+SCHEMES_ENHANCEMENT_SUMMARY.md
+SYMLINKS_CONFIG.md
+SYSTEM_ARCHITECTURE_FLOW.md
+VISUAL_FLOW_DIAGRAM.md
+WINDOWS_POSTGRESQL_SETUP.md
+
+# Data files
+*.json
+lok_sabha*.txt
+MP_PROFILE_DATASET_STRUCTURE.txt
+pnpm_list.txt
+npm_dependencies.txt
+project_tree.txt
+
+# Batch scripts (development/setup)
+*.bat
+*.ps1
+
+# Backups
+backups/
+*.bak
+
+# IDE & OS
+.vscode/
+.git/
+.DS_Store
+.env.local
+
+# Package locks (for now, but consider committing pnpm-lock.yaml)
+package-lock.json

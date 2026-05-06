@@ -1,0 +1,12 @@
+NATIONAL POLICY FOR FARMERS, 2007 (Revised 2024 Draft)
+
+1. PREAMBLE
+Agriculture is the backbone of the Indian economy. To ensure the economic viability of farming, this policy framework focuses on income security rather than just food security.
+
+2. KEY INITIATIVES
+(a) Tech Subsidies: The government provides 50% subsidy on precision farming equipment including Drones and IoT sensors for soil health monitoring.
+(b) Minimum Support Price (MSP): MSP will be guaranteed at 1.5 times the comprehensive cost of production (C2).
+(c) Crop Insurance: The PM Fasal Bima Yojana covers all non-preventable natural risks from pre-sowing to post-harvest.
+
+3. DIGITAL AGRICULTURE MISSION
+A digital ecosystem for agriculture will be created to enable farmers to access real-time market data, weather forecasts, and advisory services. All farmers will be issued a Unique Farmer ID (UFID).

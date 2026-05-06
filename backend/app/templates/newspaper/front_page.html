@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page" style="padding: 15mm; height: 100vh; box-sizing: border-box;">
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <h1>The {{ meta.region }} Gazette</h1>
+        <div class="meta">
+            <span class="left">{{ meta.date }} | {{ meta.location }}</span>
+            <span class="center">DAILY MORNING EDITION</span>
+            <span class="right">VOL 1. NO. 1 | ₹ 5.00</span>
+        </div>
+    </header>
+
+    <!-- Content Grid -->
+    <div class="grid-container">
+
+        <!-- Left Column: Briefs / Index -->
+        <div class="col-1" style="border-right: 1px solid #ccc; padding-right: 10px;">
+            <h4 class="section-label"
+                style="font-size: 10pt; background: none; color: #000; border-bottom: 2px solid #000; padding: 0;">
+                INSIDE</h4>
+            <ul style="list-style: none; padding: 0; font-size: 9pt;">
+                <li><strong>Page 2:</strong> National</li>
+                <li><strong>Page 3:</strong> State</li>
+                <li><strong>Page 5:</strong> Business</li>
+                <li><strong>Page 8:</strong> Sports</li>
+                <li><strong>Page 10:</strong> Editorial</li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="col-5">
+            {% for article in articles %}
+            {% if loop.index == 1 %}
+            <!-- Lead Story -->
+            <article class="lead-story">
+                <h2 class="headline" style="font-size: 32pt;">{{ article.headline }}</h2>
+                {% if article.subheadline %}
+                <div class="subheadline">{{ article.subheadline }}</div>
+                {% endif %}
+
+                <div class="dateline">{{ article.location }}</div>
+
+                {% if article.image_url %}
+                <!-- Valid image check would happen in Py code ideally or handle broken link -->
+                <img src="{{ article.image_url }}" class="article-img" style="height: 300px; object-fit: cover;">
+                {% endif %}
+
+                <div class="columns-3">
+                    {% for para in article.content %}
+                    <p>{{ para }}</p>
+                    {% endfor %}
+                </div>
+            </article>
+            {% else %}
+            <!-- Secondary Stories on Front Page -->
+            <article>
+                <h3 class="headline-md">{{ article.headline }}</h3>
+                <div class="dateline">{{ article.location }}</div>
+                <div class="columns-2">
+                    {% for para in article.content[:2] %} <!-- Limit text on front page -->
+                    <p>{{ para }}</p>
+                    {% endfor %}
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+<!-- Page Break handled by WeasyPrint automatically if configured, or force it -->
+<div style="page-break-after: always;"></div>
+{% endblock %}

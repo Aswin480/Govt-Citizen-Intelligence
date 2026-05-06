@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page" style="padding: 15mm; padding-top: 10mm; height: 100vh; box-sizing: border-box;">
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <span class="section-label">{{ section }}</span>
+        <span class="date" style="font-size: 9pt;">{{ meta.date }}</span>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="grid-container">
+        <!-- We'll try a masonry-like fill or just simple flow -->
+
+        <!-- Main Column (Left/Center) -->
+        <div class="col-4" style="padding-right: 15px; border-right: 1px solid #eee;">
+            {% for article in articles %}
+            {% if loop.index is odd %} <!-- Simple way to distribute, though not perfect masonry -->
+            <article>
+                <h3 class="headline-md">{{ article.headline }}</h3>
+                {% if article.image_url %}
+                <img src="{{ article.image_url }}" class="article-img" style="max-height: 200px; object-fit: cover;">
+                {% endif %}
+                <div class="dateline">{{ article.location }}</div>
+                <div class="columns-2">
+                    {% for para in article.content %}
+                    <p>{{ para }}</p>
+                    {% endfor %}
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <!-- Side Column (Right) -->
+        <div class="col-2">
+            {% for article in articles %}
+            {% if loop.index is even %}
+            <article>
+                <h4 class="headline-sm">{{ article.headline }}</h4>
+                <div class="dateline">{{ article.location }}</div>
+                <div>
+                    {% for para in article.content %}
+                    <p>{{ para }}</p>
+                    {% endfor %}
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+
+            <!-- Ad Space Placeholder -->
+            <div
+                style="margin-top: 50px; border: 1px solid #ccc; height: 200px; display: flex; align-items: center; justify-content: center; background: #f9f9f9;">
+                <span class="uppercase bold" style="color: #ccc;">Advertisement</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div style="page-break-after: always;"></div>
+{% endblock %}

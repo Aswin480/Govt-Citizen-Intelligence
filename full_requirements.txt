@@ -1,0 +1,55 @@
+# Full Python Requirements for Citizen Policy Intelligence Platform
+# Includes backend, streamlit dashboard, and all dependencies
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Data Validation
+pydantic==2.5.3
+pydantic-settings
+
+# Environment
+python-dotenv==1.0.0
+
+# HTTP Requests
+requests==2.31.0
+
+# Database
+sqlalchemy==2.0.45
+asyncpg==0.29.0
+aiosqlite==0.19.0
+
+# AI/ML
+transformers==4.36.0
+torch==2.1.0 --index-url https://download.pytorch.org/whl/cpu
+scipy==1.11.0
+bertopic
+sentence-transformers
+scikit-learn
+
+# Data Processing
+pandas
+numpy
+
+# Web Scraping
+beautifulsoup4==4.12.2
+
+# Scheduling
+apscheduler
+
+# File Handling
+python-multipart
+Pillow
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+
+# Rate Limiting
+slowapi
+
+# Dashboard
+streamlit
+plotly

@@ -1,0 +1,21 @@
+fastapi
+uvicorn
+python-multipart
+# --- Elite Stack Additions ---
+celery
+redis
+minio
+meilisearch
+psycopg2-binary
+pydantic
+sqlalchemy
+requests
+beautifulsoup4
+lxml
+pdfplumber
+reportlab
+python-dotenv
+httpx
+neo4j
+playwright
+networkx

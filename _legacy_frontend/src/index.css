@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* Native popup menus are OS-controlled on some browsers; prioritize readable text. */
+	select option,
+	select optgroup {
+		color: #0f172a !important;
+	}
+
+	.dark select {
+		background-color: #0f172a;
+		color: #e2e8f0;
+	}
+}

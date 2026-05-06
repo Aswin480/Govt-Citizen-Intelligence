@@ -1,0 +1,25 @@
+THE DIGITAL PERSONAL DATA PROTECTION ACT, 2023
+
+An Act to provide for the processing of digital personal data in a manner that recognises both the right of individuals to protect their personal data and the need to process such personal data for lawful purposes and for matters connected therewith or incidental thereto.
+
+CHAPTER I: PRELIMINARY
+1. Short title and commencement.
+(1) This Act may be called the Digital Personal Data Protection Act, 2023.
+(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.
+
+2. Definitions.
+(i) "Data Fiduciary" means any person who alone or in conjunction with other persons determines the purpose and means of processing of personal data.
+(ii) "Data Principal" means the individual to whom the personal data relates and where such individual is— (i) a child, includes the parents or lawful guardian of such a child; (ii) a person with disability, includes her lawful guardian, acting on her behalf.
+
+CHAPTER II: OBLIGATIONS OF DATA FIDUCIARY
+3. Grounds for processing personal data.
+A Data Fiduciary shall process personal data only for a lawful purpose for which the Data Principal has given her consent or for certain legitimate uses.
+
+4. Notice.
+(1) A request for consent shall be preceded or accompanied by a notice given by the Data Fiduciary to the Data Principal, giving the option to access the contents of the notice in English or any language specified in the Eighth Schedule to the Constitution.
+
+CHAPTER III: RIGHTS AND DUTIES OF DATA PRINCIPAL
+11. Right to access information about personal data.
+The Data Principal shall have the right to obtain from the Data Fiduciary—
+(a) a summary of personal data which is being processed by such Data Fiduciary and the processing activities undertaken by that Data Fiduciary with respect to such personal data;
+(b) the identities of all other Data Fiduciaries and Data Processors with whom the personal data has been shared by such Data Fiduciary.

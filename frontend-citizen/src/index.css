@@ -1,0 +1,149 @@
+@import './styles/theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-app)] text-[var(--color-text-primary)] antialiased font-sans;
+  }
+
+  /* Native popup menus are OS-controlled on some browsers; prioritize readable text. */
+  select option,
+  select optgroup {
+    color: #0f172a !important;
+  }
+
+  .dark select {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+
+  /* Typography Enhancements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight text-[var(--color-gov-navy-900)] dark:text-[var(--color-text-primary)];
+  }
+
+  h1 {
+    @apply text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+}
+
+@layer components {
+
+  /* Utility for Glassmorphism (Premium Feel) */
+  .glass-panel {
+    @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white/30 shadow-2xl;
+  }
+
+  .btn-gov {
+    @apply bg-[var(--color-gov-navy-900)] text-white px-6 py-3 rounded-[var(--radius-md)] hover:bg-[var(--color-gov-navy-800)] active:translate-y-0.5 transition-all font-semibold tracking-wide shadow-lg shadow-slate-900/30 flex items-center justify-center gap-2;
+  }
+
+  .btn-accent {
+    @apply bg-[var(--color-gov-amber-500)] text-slate-900 px-6 py-3 rounded-[var(--radius-md)] hover:bg-[var(--color-gov-amber-400)] font-bold shadow-lg shadow-yellow-500/30 transition-all uppercase tracking-wider flex items-center justify-center gap-2;
+  }
+
+  /* Animations for "Power" Feel */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Marquee Animation for Alert Ticker */
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  .animate-scanline {
+    animation: scanline 4s linear infinite;
+  }
+
+  .animate-pulse-fast {
+    animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(1000%); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Compact View Utilities */
+html.compact-view table td,
+html.compact-view table th {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+html.compact-view .p-6 {
+  padding: 1rem !important;
+}
+html.compact-view .gap-6 {
+  gap: 1rem !important;
+}
+html.compact-view .space-y-6 > * + * {
+  margin-top: 1rem !important;
+}

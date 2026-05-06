@@ -1,0 +1,45 @@
+@layer base {
+    :root {
+        /* Civic One: Design System Tokens */
+
+        /* Primary / Authority */
+        --color-gov-navy-900: #0f172a;
+        /* Slate 900 - Deep, Authoritative */
+        --color-gov-navy-800: #1e293b;
+        /* Slate 800 */
+        --color-gov-navy-700: #334155;
+        /* Slate 700 */
+
+        /* Accent / Power / Warning (The "Warning Light" High-Vis Palette) */
+        --color-gov-amber-500: #FFCC00;
+        /* Standard Warning Yellow - High Vis */
+        --color-gov-amber-400: #FFD633;
+        /* Illuminated Warning Light */
+        --color-gov-gold: #E6B800;
+        /* Deep Warning/Construction */
+
+        /* State Colors for "Power" feel */
+        --color-success: #10b981;
+        --color-warning: #f59e0b;
+        --color-error: #ef4444;
+
+        /* Functional */
+        --color-bg-app: #f8fafc;
+        /* Slate 50 */
+        --color-bg-card: #ffffff;
+        --color-text-primary: #0f172a;
+        --color-text-secondary: #475569;
+
+        /* Semantic */
+        --radius-sm: 0.25rem;
+        --radius-md: 0.5rem;
+        --radius-lg: 0.75rem;
+    }
+
+    .dark {
+        --color-bg-app: #0f172a;
+        --color-bg-card: #1e293b;
+        --color-text-primary: #f1f5f9;
+        --color-text-secondary: #94a3b8;
+    }
+}

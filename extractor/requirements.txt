@@ -1,0 +1,13 @@
+streamlit
+httpx
+pandas
+beautifulsoup4
+lxml
+selenium
+webdriver-manager
+pdfplumber
+html5lib
+google-generativeai
+openpyxl
+playwright
+schedule

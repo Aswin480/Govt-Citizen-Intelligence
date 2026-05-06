@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ meta.region }} Gazette</title>
+    <link rel="stylesheet" href="{{ css_path }}">
+    <style>
+        /* Specific print overrides if css file doesn't load for some reason */
+        @page { margin: 0; }
+    </style>
+</head>
+<body>
+    <!-- Define string for running header -->
+    <div style="display: none; string-set: region-title '{{ meta.region }}';"></div>
+    
+    {% block content %}{% endblock %}
+</body>
+</html>

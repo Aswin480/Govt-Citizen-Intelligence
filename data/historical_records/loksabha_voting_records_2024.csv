@@ -1,0 +1,4 @@
+Bill_ID,Date,Vote_For,Vote_Against,Abstain,Result
+BILL-2024-001,2024-12-05,340,120,5,Passed
+BILL-2024-002,2024-12-08,210,240,10,Rejected
+BILL-2024-003,2024-12-12,400,20,0,Passed
