@@ -122,7 +122,52 @@ backups/
 .vscode/
 .git/
 .DS_Store
+
+# Environment Variables & Secrets (CRITICAL - NEVER COMMIT)
+.env
 .env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!.env.example
+
+# Secret Keys & Certificates
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.pks
+secrets/
+.secrets/
+
+# Docker Compose Overrides (may contain secrets)
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.*.yml
+!docker-compose.yml
+
+# Configuration files with secrets (local overrides)
+.config.local.*
+config.local.py
+settings.local.py
+config.*.local.*
+
+# API Keys & Credentials Files
+*.key.json
+credentials.json
+*_credentials.*
+token.json
+.auth
+
+# Backups of config files that might have secrets
+*.bak.json
+*.backup.py
+*.backup.yml
 
 # Package locks (for now, but consider committing pnpm-lock.yaml)
 package-lock.json
